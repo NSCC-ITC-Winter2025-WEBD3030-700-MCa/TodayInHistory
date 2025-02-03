@@ -1,0 +1,119 @@
+<section class="bg-light page-section" id="{{ site.data.sitetext.history.section | default: "history" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center mt-5">
+        <h2 class="section-heading text-uppercase">
+          {{ site.data.sitetext[site.locale].history.title | markdownify | default: "History" }}
+        </h2>
+        <h3 class="section-subheading text-muted">
+          {{ site.data.sitetext[site.locale].history.text | markdownify }}
+        </h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        {% assign all_days = "" | split: "" %}
+
+        {% for month in site.portfolio %}
+          {% for day in month.days %}
+            {% assign all_days = all_days | push: day %}
+          {% endfor %}
+        {% endfor %}
+
+        {% assign all_days = all_days | sort: "date" %}
+
+        <div class="event-list">
+          {% for day in all_days %}
+          <div class="event-item">
+            
+            <!-- Date Block (Now Above Events) -->
+            <div class="date-container">
+              <h2 class="date-display">
+                {{ day.date | date: "%d" }} {{ day.date | date: "%B" }}
+              </h2>
+            </div>
+
+            <!-- Events List -->
+            <div class="events-content">
+              {% for year_events in day.years %}
+                {% assign year = year_events[0] %}
+                {% assign events = year_events[1].events %}
+
+                <div class="year-block">
+                  <strong class="event-year">{{ year }}</strong>
+                  <ul class="event-details">
+                    {% for event in events %}
+                      <li>
+                        <strong class="event-title">{{ event.title }}</strong>
+                        <p class="event-description">{{ event.description }}</p>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.event-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.event-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+}
+
+.date-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.date-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.events-content {
+  margin-left: 20px;
+}
+
+.year-block {
+  margin-top: 10px;
+}
+
+.event-year {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-details {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.event-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  display: block;
+}
+
+.event-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 2px;
+}
+
+</style>
