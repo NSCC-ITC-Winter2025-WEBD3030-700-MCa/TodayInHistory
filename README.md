@@ -13,6 +13,13 @@ Before running this Jekyll project, ensure you have the following installed:
 
 Link for Windows Download: https://rubyinstaller.org/downloads/
 
+## Ruby Installation Instructions
+
+1. **Use all of the default settings for installation.**  
+2. In the Command Prompt for Ruby Installer, when it prompts you with options and says:  
+   _"If unsure, press Enter,"_  
+   simply press **Enter** to continue.
+
 ### Verify Installation
 Run the following commands to check if Ruby and Gem are installed correctly:
 
@@ -41,8 +48,3 @@ bundle exec jekyll serve
 ```sh
 jekyll serve
 ```
-## If theme is not working try:
-```sh
-bundle install
-```
-
