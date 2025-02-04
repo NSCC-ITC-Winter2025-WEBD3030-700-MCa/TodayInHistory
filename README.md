@@ -1,6 +1,12 @@
 ## Contributor Resources 
-Here is this projects theme "Minima". It is the default Jekyll theme. It is also the codebase which this project was built off of. 
 
+Liquid is a templating language that allows Jekyll to dynamically pull content from different folders and Markdown files. It helps organize content without using a backend database.
+Liquid Template Language Docs:
+https://shopify.github.io/liquid/basics/introduction/
+
+
+Here is this projects theme "Minima". It is the default Jekyll theme.
+It is also the codebase which this project was built off. 
 https://github.com/jekyll/minima
 
 # Jekyll Project Setup Guide

@@ -35,8 +35,6 @@ theme: minima
 
 plugins:
   - jekyll-feed
-
-
 # Theme-specific settings
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
