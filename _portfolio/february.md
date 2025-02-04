@@ -44,7 +44,7 @@ days:
           - title: "Battle of Stalingrad Ends"
             description: "The Soviet Union won a decisive victory over Nazi Germany in one of the bloodiest battles in history, marking a turning point in World War II."
 
-days:
+
   - date: "February 3"
     title: "Significant Events on February 3"
     thumbnail: "assets/img/history/february-3.jpg"
@@ -91,6 +91,6 @@ days:
         events:
           - title: "First Hydrogen Bomb Lost"
             description: "A U.S. Air Force plane accidentally dropped a hydrogen bomb off the coast of Georgia, which was never recovered."
- 
+
 ---
 
