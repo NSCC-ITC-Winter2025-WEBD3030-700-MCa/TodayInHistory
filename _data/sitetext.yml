@@ -1,0 +1,54 @@
+# English (default)
+en: &DEFAULT_EN
+  header:
+    title: Today In History!
+    text: Discover historical events grouped by month and day.
+    button: Explore Now
+    buttonlink: "#history"
+    
+  portfolio:
+    title: "portfolio_grid"
+    text: "Potential Feature"
+    section: portfolio
+    closebutton: "Close Project"
+
+  history:
+    title: "History by Month"
+    text: "Browse historical events, grouped into months and individual days."
+    section: history
+    closebutton: "Close"
+
+  month:
+    title: "Months of the Year"
+    text: "Select a month to explore events from different days."
+    viewdays: "View Days"
+    viewdetails: "View Details"
+
+  day:
+    title: "Events on {{ day.date }}"
+    subtitle: "Historical highlights for {{ day.date }}"
+    viewdetails: "View Details"
+    noevents: "No events recorded for this day."
+    eventsheader: "Historical Events"
+    yearheader: "Year"
+    descriptionheader: "Description"
+
+  timeline:
+    title: "Timeline"
+    text: "Explore key events in history."
+    section: timeline
+
+  about:
+    title: "About This Project"
+    text: "Discover the most significant events in history grouped by month and day."
+    body: "Learn and explore a detailed catalog of historical events, complete with descriptions and images."
+
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
