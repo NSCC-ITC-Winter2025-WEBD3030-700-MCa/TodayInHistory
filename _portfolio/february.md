@@ -91,6 +91,92 @@ days:
         events:
           - title: "First Hydrogen Bomb Lost"
             description: "A U.S. Air Force plane accidentally dropped a hydrogen bomb off the coast of Georgia, which was never recovered."
+  - date: "February 6"
+    title: "Significant Events on February 6"
+    thumbnail: "assets/img/history/february-6.jpg"
+    years:
+      1952:
+        events:
+          - title: "Queen Elizabeth II Becomes Monarch"
+            description: "Elizabeth II ascended to the British throne following the death of her father, King George VI."
+      1971:
+        events:
+          - title: "First Golf Shot on the Moon"
+            description: "Astronaut Alan Shepard hit two golf balls on the Moon during the Apollo 14 mission."
+      1998:
+        events:
+          - title: "Washington National Airport Renamed"
+            description: "Washington National Airport was renamed Ronald Reagan Washington National Airport."
+
+  - date: "February 7"
+    title: "Significant Events on February 7"
+    thumbnail: "assets/img/history/february-7.jpg"
+    years:
+      1812:
+        events:
+          - title: "New Madrid Earthquake"
+            description: "One of the largest earthquakes in U.S. history struck near New Madrid, Missouri."
+      1964:
+        events:
+          - title: "The Beatles Arrive in America"
+            description: "The Beatles landed at New York’s JFK Airport, beginning the 'British Invasion' of music in the U.S."
+      1992:
+        events:
+          - title: "European Union Treaty Signed"
+            description: "The Maastricht Treaty was signed, laying the foundation for the modern European Union."
+
+  - date: "February 8"
+    title: "Significant Events on February 8"
+    thumbnail: "assets/img/history/february-8.jpg"
+    years:
+      1587:
+        events:
+          - title: "Mary, Queen of Scots Executed"
+            description: "Mary, Queen of Scots, was executed at Fotheringhay Castle after being accused of plotting against Queen Elizabeth I of England."
+      1828:
+        events:
+          - title: "Jules Verne Born"
+            description: "Jules Verne, the famous French writer known for his adventure novels like 'Twenty Thousand Leagues Under the Sea' and 'Around the World in Eighty Days,' was born in Nantes, France."
+      1865:
+        events:
+          - title: "Delaware Rejects the 13th Amendment"
+            description: "Delaware voted against the 13th Amendment, which abolished slavery in the United States. It would later ratify it in 1901."
+      1910:
+        events:
+          - title: "Boy Scouts of America Founded"
+            description: "The Boy Scouts of America organization was incorporated in Washington, D.C."
+      1924:
+        events:
+          - title: "First Winter Olympics Open"
+            description: "The first Winter Olympic Games opened in Chamonix, France."
+      1943:
+        events:
+          - title: "Battle of Guadalcanal Ends"
+            description: "U.S. forces secured victory in the months-long Battle of Guadalcanal, marking a turning point in the Pacific theater of World War II."
+      1952:
+        events:
+          - title: "Elizabeth II Becomes Queen"
+            description: "Elizabeth II was proclaimed Queen of the United Kingdom following the death of her father, King George VI, on February 6."
+      1960:
+        events:
+          - title: "First Fusion Reactor Experiment Conducted"
+            description: "The first controlled thermonuclear fusion experiment was conducted in the United States."
+      1971:
+        events:
+          - title: "NASDAQ Stock Market Opens"
+            description: "The NASDAQ stock market, the world's first electronic stock exchange, began operations."
+      1978:
+        events:
+          - title: "First 'Computer Bug' Reported"
+            description: "The term 'computer bug' was popularized when Grace Hopper found a moth inside a relay of a computer."
+      1994:
+        events:
+          - title: "Nancy Kerrigan Wins Silver at Lillehammer Olympics"
+            description: "Figure skater Nancy Kerrigan won a silver medal in the Winter Olympics, weeks after being attacked in a scandal involving rival Tonya Harding."
+      2013:
+        events:
+          - title: "North Korea Conducts Third Nuclear Test"
+            description: "North Korea conducted its third nuclear test, drawing international condemnation."
 
 ---
 

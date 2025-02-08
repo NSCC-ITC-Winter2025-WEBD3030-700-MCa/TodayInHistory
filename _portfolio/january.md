@@ -18,12 +18,15 @@ days:
         events:
           - title: "Emancipation Proclamation"
             description: "Issued by Abraham Lincoln, declaring all slaves in Confederate states to be free."
+            categories: ["Politics", "Civil Rights"]
       1999:
         events:
           - title: "The Euro"
             description: "The Euro becomes the official currency of 11 EU countries."
+            categories: ["Economics", "Politics"]
           - title: "Celebrations"
             description: "People celebrated the new millennium with hope and joy."
+            categories: ["Culture"]
 
   - date: "January 2"
     title: "Second Day of January"
@@ -33,4 +36,5 @@ days:
         events:
           - title: "Battle of Stalingrad Ends"
             description: "Marking a major turning point in World War II."
+            categories: ["Tests"]
 ---
