@@ -1,6 +1,7 @@
 name: Check for Linked Issue to auto-close in PR
 
 on:
+  workflow_dispatch:
   pull_request:
     types:
       - opened
