@@ -97,3 +97,8 @@ Use the following commands to start the Jekyll server:
 jekyll serve
 ```
 
+## Live Deployed Site
+
+You can view the live version of the site at:
+
+[http://127.0.0.1:4000/](http://127.0.0.1:4000/)
