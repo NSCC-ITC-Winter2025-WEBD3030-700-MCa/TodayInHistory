@@ -11,6 +11,8 @@ https://github.com/jekyll/minima
 
 # Jekyll Project Setup Guide
 
+## Windows Installation
+
 ## Prerequisites
 Before running this Jekyll project, ensure you have the following installed:
 
@@ -18,8 +20,6 @@ Before running this Jekyll project, ensure you have the following installed:
   - We are using **Ruby+Devkit 3.3.7-1 (x64)**
 
 Link for Windows Download: https://rubyinstaller.org/downloads/
-
-## Ruby Installation Instructions
 
 1. **Use all of the default settings for installation.**  
 2. In the Command Prompt for Ruby Installer, when it prompts you with options and says:  
@@ -43,6 +43,12 @@ To install Jekyll and Bundler, run:
 gem install bundler jekyll
 ```
 
+## Install Dependencies
+Use the following command to install dependencies:
+```sh
+bundle install
+```
+
 ## Start the Application
 Use one of the following commands to start the Jekyll server:
 
@@ -54,3 +60,40 @@ bundle exec jekyll serve
 ```sh
 jekyll serve
 ```
+
+## Mac Installation
+
+## Install Ruby
+First, install Ruby using Homebrew:
+
+```bash
+brew install ruby
+```
+
+## Verify Ruby Installation
+Check if Ruby and Gem were successfully installed by running the following commands:
+
+```bash
+ruby -v
+gem -v
+```
+
+## Install Jekyll and Bundler
+To install Jekyll and Bundler, run:
+
+```bash
+gem install jekyll bundler
+```
+
+## Install Dependencies
+Use the following command to install dependencies:
+```bash
+bundle install
+```
+
+## Start the Application
+Use the following commands to start the Jekyll server:
+```bash
+jekyll serve
+```
+
