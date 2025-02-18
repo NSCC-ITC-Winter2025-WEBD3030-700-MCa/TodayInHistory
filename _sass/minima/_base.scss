@@ -1,3 +1,11 @@
+// Define color variables
+$background-color: #f5f5dc; // Beige
+$text-color: #5e4949; // Dark Brown
+$header-footer-bg: #deb887; // Light Brown
+$header-footer-color: #fffaf0; // Floral White
+$border-color: #c3b091; // Antique Bronze
+
+
 html {
   font-size: $base-font-size;
 }
@@ -10,9 +18,23 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-
+  background-color: $background-color;
+  color: $text-color
 }
 
+.header, .footer {
+  background-color: $header-footer-bg;
+  // color: $header-footer-color;
+}
+.post {
+  border: 1px solid $border-color;
+  padding: 10px;
+  // background-color: $header-footer-color;
+}
+.post-title {
+  font-weight: bold;
+  border-bottom: 2px solid;
+}
 
 
 /**
