@@ -1,4 +1,4 @@
-<section class="bg-light page-section" id="{{ site.data.sitetext.history.section | default: "history" }}">
+<section class=" page-section" id="{{ site.data.sitetext.history.section | default: "history" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center mt-5">
@@ -61,59 +61,150 @@
   </div>
 </section>
 
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+    const button = document.getElementById('theme-toggle-btn');
+    if (document.body.classList.contains('dark-theme')) {
+      button.innerHTML = '🌞';  // Sun icon for dark mode
+      localStorage.setItem('theme', 'dark');
+    } else {
+      button.innerHTML = '🌙';  // Moon icon for light mode
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
+  function applySavedTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const button = document.getElementById('theme-toggle-btn');
+
+    // Apply the saved theme
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+      button.innerHTML = '🌞';  
+    } else {
+      document.body.classList.remove('dark-theme');
+      button.innerHTML = '🌙'; 
+    }
+  }
+
+  window.onload = applySavedTheme;
+</script>
 <style>
-.event-list {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
+  :root {
+    --bg-color: #f4ebba;
+    --text-color: #111111;
+    --header-bg: #f4ebba;
+    --event-bg: #eee289;
+    --event-border-color: #ddd;
+    --link-color: #2a7ae2;
+  }
+.dark-theme {
+    --bg-color: #000000;
+    --text-color: #c4b706;
+    --header-bg: #000000;
+    --event-bg: #f0e0a8;
+    --event-border-color: #f1eacf;
+    --link-color: #335c01;
+  }
 
-.event-item {
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd; /* Bottom border for separation */
-}
+  /* General Styles */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+  }
 
-.date-container {
-  text-align: center;
-  margin-bottom: 10px;
-}
+  .masthead {
+    background-color: var(--header-bg);
+    color: var(--text-color);  
+  }
 
-.date-display {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-}
+  .masthead h1, .masthead h3 {
+    color: var(--text-color);  
+  }
 
-.events-content {
-  margin-left: 20px;
-}
+  .event-item {
+    background-color: var(--event-bg);
+    border-bottom: 1px solid var(--event-border-color);
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+  }
 
-.year-block {
-  margin-top: 10px;
-}
+  .event-year {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-color); 
+  }
 
-.event-year {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #333;
-}
+  .event-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--link-color);  
+  }
 
-.event-details {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 5px;
-}
+  .event-description {
+    font-size: 0.9em;
+    color: var(--text-color); 
+  }
 
-.event-title {
-  font-size: 1.1em;
-  font-weight: bold;
-  display: block;
-}
+  .theme-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+  }
 
-.event-description {
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 2px;
-}
+  .theme-toggle-btn:hover {
+    opacity: 0.7;
+  }
 
+  /* Event Section */
+  .history-section {
+    color: var(--text-color);
+  }
+
+  .event-list {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .date-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .date-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  .events-content {
+    margin-left: 20px;
+  }
+
+  .year-block {
+    margin-top: 10px;
+  }
+
+  .event-details {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+
+  .event-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+  }
+
+  .event-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 2px;
+  }
 </style>
