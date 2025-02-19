@@ -84,8 +84,19 @@ function navigateToDate() {
   // Create the URL (e.g., /days/february-1/)
   let url = `/days/${month.toLowerCase()}-${day}/`;
 
-  // Redirect to the selected day's page
-  window.location.href = url;
+  // Check if the page exists by making a request
+  fetch(url, { method: 'HEAD' })
+          .then(response => {
+              if (response.ok) {
+                  window.location.href = url; // Redirect if the page exists
+              } else {
+                  window.location.href = "/no-events.html"; // Redirect to fallback page
+              }
+          })
+          .catch(error => {
+              console.error("Error checking page:", error);
+              window.location.href = "/no-events.html"; // Fallback if request fails
+          });
 }
 
 </script>
