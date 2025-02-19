@@ -4,16 +4,10 @@ title: About
 permalink: /about/
 ---
 
+Welcome to **Today in History**, a feature dedicated to bringing you significant events, milestones, and anniversaries that occurred on this day throughout history.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Each day, we highlight key moments across various domains such as science, politics, culture, sports, and more. Whether it's the birth of influential figures, groundbreaking discoveries, or pivotal events that shaped the world, "Today in History" serves as a window into the past.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Stay tuned for daily updates and discover how history continues to influence our present and future. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Explore, learn, and reflect on the stories that make today truly remarkable!
