@@ -1,4 +1,4 @@
-<section class="bg-light page-section" id="{{ site.data.sitetext.history.section | default: "history" }}">
+<section class="bg-light page-section" id="{{ site.data.sitetext.history.section | default: 'history' }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center mt-5">
@@ -27,7 +27,7 @@
           {% for day in all_days %}
           <div class="event-item">
             
-            <!-- Date Block (Now Above Events) -->
+            <!-- Date Block -->
             <div class="date-container">
               <h2 class="date-display">
                 {{ day.date | date: "%d" }} {{ day.date | date: "%B" }}
@@ -59,43 +59,72 @@
       </div>
     </div>
   </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" title="Go to Top">▲</button>
+
 </section>
 
+<!-- Smooth Scroll & Back to Top Functionality -->
+<script>
+  var backToTopButton = document.getElementById("backToTop");
+
+  // Show the button when scrolling down
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top when clicked
+  backToTopButton.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+
 <style>
+/* History Section Styling */
 .event-list {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
+/* Event Item */
 .event-item {
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
+/* Date Block */
 .date-container {
   text-align: center;
   margin-bottom: 10px;
 }
 
 .date-display {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #333;
 }
 
+/* Event Content Styling */
 .events-content {
   margin-left: 20px;
 }
 
 .year-block {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .event-year {
   font-size: 1.2em;
   font-weight: bold;
   color: #333;
+  margin-bottom: 5px;
 }
 
 .event-details {
@@ -108,12 +137,58 @@
   font-size: 1.1em;
   font-weight: bold;
   display: block;
+  color: #222;
 }
 
 .event-description {
   font-size: 0.9em;
-  color: #666;
-  margin-top: 2px;
+  color: #555;
+  margin-top: 4px;
+  line-height: 1.4;
 }
 
+/* 🔹 Back to Top Button */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #2337ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #000d8a;
+  transform: scale(1.1);
+}
+
+/* 🔹 Mobile Optimizations */
+@media (max-width: 768px) {
+  .event-list {
+    padding: 0 10px;
+  }
+  .date-display {
+    font-size: 1.4rem;
+  }
+  .events-content {
+    margin-left: 10px;
+  }
+  .event-year {
+    font-size: 1.1em;
+  }
+  .event-title {
+    font-size: 1em;
+  }
+  .event-description {
+    font-size: 0.85em;
+  }
+}
 </style>
