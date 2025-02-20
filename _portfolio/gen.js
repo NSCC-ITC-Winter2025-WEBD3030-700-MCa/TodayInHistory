@@ -63,7 +63,7 @@ async function generateMarkdownFileForMonth(monthIndex) {
     const data = await fetchDayData(monthIndex + 1, day);
     if (!data || !data.selected) continue;
 
-    const event = data.selected[0]; // Taking the first event for simplicity
+    const event = data.selected[0];
     if (event && event.year && event.text) {
       eventsForMonth.push({
         day: day.toString(),
