@@ -142,4 +142,4 @@ jekyll serve
 
 You can view the live version of the site at:
 
-[https://deploy-preview-39--todayinhistory-nscc.netlify.app/](https://deploy-preview-39--todayinhistory-nscc.netlify.app/)
+[https://todayinhistory-nscc.netlify.app/](hhttps://todayinhistory-nscc.netlify.app/)
