@@ -137,6 +137,15 @@ On 1 July 2008, a riot broke out in Ulaanbaatar, the Mongolian capital city. The
           - title: "The last nine Aston Martin DB9 units rolled off the production line, marking the end of a twelve-year manufacturing period."
             description: "The Aston Martin DB9 is a two-door grand touring car. It was produced in Gaydon, Warwickshire, by the British carmaker Aston Martin between 2004 and 2016 as both a coupé and a convertible, the latter known as the 'Volante'."
             type: "Culture"
+  - date: "July 28"
+    title: "Michael Caines Birthday."
+    thumbnail: "assets/img/history/july-29.jpg"
+    years:
+      1981:
+        events:
+          - title: "The day when Michael Caines was born!"
+            description: " On this day each year we need to ensure we say happy bday to M Caines!! We don't need to worry about if the date inputed here is the correct year or not, that's none of our buisness!"
+            type: "Culture"
   - date: "July 29"
     title: "An estimated worldwide television audience of 750 million watched the wedding of Prince Charles and Lady Diana Spencer at St Paul's Cathedral in London."
     thumbnail: "assets/img/history/july-29.jpg"
