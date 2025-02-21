@@ -1,6 +1,8 @@
 <header class="site-header">
 
     <div class="wrapper">
+      <!-- Theme Toggle Button -->
+<button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleTheme()">🌙</button>
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
@@ -32,14 +34,75 @@
     
     <style>
       .site-title {
-          text-decoration: none; /* Remove underline */
-          color: inherit; /* Keep text color consistent */
+          text-decoration: none; 
+          color: inherit; 
       }
 
       .site-title:hover {
-          text-decoration: none; /* Ensure no underline on hover */
+          text-decoration: none; 
         
       }
+        :root {
+      --bg-color: #f4ebba;
+      --text-color: #111111;
+      --header-bg: #f4ebba;
+      --event-bg: #eee289;
+      --event-border-color: #ddd;
+      --link-color: #2a7ae2;
+    }
+    .dark-theme {
+        --bg-color: #1e1d1d;
+        --text-color: #a3670d;
+        --header-bg: #000000;
+        --event-bg: #e0d497;
+        --event-border-color: #f7f7f5;
+        --link-color: #101904;
+      }
+
+  /* General Styles */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+  }
+
+  .event-item {
+    background-color: var(--event-bg);
+    border-bottom: 1px solid var(--event-border-color);
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .theme-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+
+  .theme-toggle-btn:hover {
+    opacity: 0.7;
+  }
+
   </style>
   </header>
+  <script>
+    //Dark and light mode
+  function toggleTheme() {
+        document.body.classList.toggle('dark-theme');
+        const button = document.getElementById('theme-toggle-btn');
+        if (document.body.classList.contains('dark-theme')) {
+            button.innerHTML = '🌞';  
+        } else {
+            button.innerHTML = '🌙';  
+        }
+    }
+
+    window.onload = function() {
+        const button = document.getElementById('theme-toggle-btn');
+        const isDarkMode = document.body.classList.contains('dark-theme');
+        button.innerHTML = isDarkMode ? '🌞' : '🌙';  
+    };
+  </script>
   
