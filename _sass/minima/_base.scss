@@ -1,6 +1,6 @@
 // Define color variables
 //$background-color: #f5f5dc; // Beige
-$text-color: #5e4949; // Dark Brown
+$text-color: #1f1d1d; // Dark Brown
 $header-footer-bg: #deb887; // Light Brown
 $header-footer-color: #fffaf0; // Floral White
 $border-color: #c3b091; // Antique Bronze
@@ -28,6 +28,7 @@ dl, dd, ol, ul, figure {
 .post {
   border: 1px solid $border-color;
   padding: 10px;
+  color: $text-color;
   // background-color: $header-footer-color;
 }
 .post-title {
