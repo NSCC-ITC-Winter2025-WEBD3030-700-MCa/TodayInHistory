@@ -1,0 +1,58 @@
+---
+layout: day
+title: "Significant Events on September 4"
+date: "September 4"
+years:
+  476:
+    events:
+      - title: "Germanic leader Odoacer captured Ravenna and deposed Emperor Romulus Augustus, marking the fall of the Western Roman Empire."
+        description: "The Germanic peoples were tribal groups who lived in Northern Europe in Classical Antiquity and the Early Middle Ages. In modern scholarship, they typically include not only the Roman-era Germani who lived in both Germania and parts of the Roman empire, but also all Germanic speaking peoples from this era, irrespective of where they lived, most notably the Goths. Another term, ancient Germans, is considered problematic by many scholars since it suggests identity with present-day Germans. Although the first Roman descriptions of Germani involved tribes west of the Rhine, their homeland of Germania was portrayed as stretching east of the Rhine, to southern Scandinavia and the Vistula in the east, and to the upper Danube in the south. Other Germanic speakers, such as the Bastarnae and Goths, lived further east in what is now Moldova and Ukraine. The term Germani is generally only used to refer to historical peoples from the 1st to 4th centuries CE."
+  1781:
+    events:
+      - title: "Los Angeles was founded as El Pueblo de Nuestra Señora la Reina de los Ángeles by forty-four Spanish settlers."
+        description: "Los Angeles, often referred to by its initials L.A., is the most populous city in the U.S. state of California. With an estimated 3,820,914 residents within the city limits as of 2023, it is the second-most populous city in the United States, behind only New York City; it is also the commercial, financial and cultural center of Southern California. Los Angeles has an ethnically and culturally diverse population, and is the principal city of a metropolitan area of 12.8 million people (2023). Greater Los Angeles, which includes the Los Angeles and Riverside–San Bernardino metropolitan areas, is a sprawling metropolis of over 18.3 million residents."
+  1800:
+    events:
+      - title: "French Revolutionary Wars- Facing starvation and a death rate of 100 soldiers per day, the French garrison in Malta surrendered to British forces, ending a two-year siege."
+        description: "The French Revolutionary Wars were a series of sweeping military conflicts resulting from the French Revolution that lasted from 1792 until 1802. They pitted France against Great Britain, Austria, Prussia, Russia, and several other countries. The wars are divided into two periods- the War of the First Coalition (1792–1797) and the War of the Second Coalition (1798–1802). Initially confined to Europe, the fighting gradually assumed a global dimension. After a decade of constant warfare and aggressive diplomacy, France had conquered territories in the Italian Peninsula, the Low Countries, and the Rhineland due to its very large and powerful military, which had been totally mobilized for war against most of Europe with mass conscription of the vast French population. French success in these conflicts ensured military occupation and the spread of revolutionary principles over much of Europe."
+  1812:
+    events:
+      - title: "War of 1812- A coalition of Native American tribes began the siege of Fort Harrison in Terre Haute, Indiana, by setting the fort on fire."
+        description: "The War of 1812 was fought by the United States and its allies against the United Kingdom and its allies in North America. It began when the United States declared war on Britain on 18 June 1812. Although peace terms were agreed upon in the December 1814 Treaty of Ghent, the war did not officially end until the peace treaty was ratified by the United States Congress on 17 February 1815."
+  1839:
+    events:
+      - title: "First Opium War- British vessels opened fire on Chinese war junks enforcing a food sales embargo on the British community on the Kowloon Peninsula."
+        description: "The First Opium War, also known as the Anglo-Chinese War, was a series of military engagements fought between the British Empire and the Qing Dynasty of China between 1839 and 1842. The immediate issue was the Chinese enforcement of their ban on the opium trade by seizing private opium stocks from mainly British merchants at Guangzhou and threatening to impose the death penalty for future offenders. Despite the opium ban, the British government supported the merchants' demand for compensation for seized goods, and insisted on the principles of free trade and equal diplomatic recognition with China. Opium was Britain's single most profitable commodity trade of the 19th century. After months of tensions between the two states, the Royal Navy launched an expedition in June 1840, which ultimately defeated the Chinese using technologically superior ships and weapons by August 1842. The British then imposed the Treaty of Nanking, which forced China to increase foreign trade, give compensation, and cede Hong Kong Island to the British. Consequently, the opium trade continued in China. Twentieth-century nationalists considered 1839 the start of a century of humiliation, and many historians consider it the beginning of modern Chinese history."
+  1843:
+    events:
+      - title: "The state wedding of Teresa Cristina of the Two Sicilies and Emperor Pedro II of Brazil took place at the Cathedral of Rio de Janeiro."
+        description: "Dona Teresa Cristina, nicknamed 'the Mother of the Brazilians', was Empress of Brazil as the consort of Emperor Dom Pedro II from their marriage on 30 May 1843 until 15 November 1889, when the monarchy was abolished. Born a princess of the Kingdom of the Two Sicilies in present-day southern Italy, Teresa Cristina was the daughter of King Don Francesco I (Francis I) of the Italian branch of the House of Bourbon and his wife Maria Isabel. It was long believed by historians that the Princess was raised in an ultra-conservative, intolerant atmosphere which resulted in a timid and unassertive character in public and an ability to be contented with very little materially or emotionally. Recent studies revealed a more complex character, who despite having respected the social norms of the era, was able to assert a limited independence due to her strongly opinionated personality as well as her interest in learning, sciences and culture."
+  1886:
+    events:
+      - title: "After more than 25 years of fighting against the United States Army and the armed forces of Mexico, Geronimo of the Chiricahua Apache surrendered at Skeleton Canyon in Arizona."
+        description: "The United States Army (USA) is as the Army of the United States - the land force - designated in the United States Constitution. It operates under the authority, direction, and control of the United States secretary of defense. It is one of the six armed forces and one of the eight uniformed services of the United States. The Army is the most senior branch in order of precedence amongst the armed services. It has its roots in the Continental Army, which was formed on 14 June 1775 to fight against the British for independence during the American Revolutionary War (1775–1783). After the Revolutionary War, the Congress of the Confederation created the United States Army on 3 June 1784 to replace the disbanded Continental Army. The United States Army considers itself a continuation of the Continental Army, and thus considers its institutional inception to be the origin of that armed force in 1775."
+  1912:
+    events:
+      - title: "The Albanian revolt ended when the Ottoman government agreed to meet most of the rebels' demands."
+        description: "The Albanian revolt of 1912 was the last revolt against the Ottoman Empire's rule in Albania and lasted from January until August 1912. The revolt ended when the Ottoman government agreed to fulfill the rebels' demands on 4 September 1912. Generally, Muslim Albanians fought against the Ottomans then governed by the Committee of Union and Progress."
+  1934:
+    events:
+      - title: "Evelyn Waugh's novel A Handful of Dust was first published in full."
+        description: "Arthur Evelyn St. John Waugh was an English writer of novels, biographies, and travel books; he was also a prolific journalist and book reviewer. His most famous works include the early satires Decline and Fall (1928) and A Handful of Dust (1934), the novel Brideshead Revisited (1945), and the Second World War trilogy Sword of Honour (1952–1961). He is recognised as one of the great prose stylists of the English language in the 20th century."
+  1957:
+    events:
+      - title: "Governor Orval Faubus deployed the Arkansas National Guard to prevent nine African-American students from attending Little Rock Central High School."
+        description: "Orval Eugene Faubus was an American politician who served as the 36th Governor of Arkansas from 1955 to 1967, as a member of the Democratic Party. In 1957, he refused to comply with a decision of the U.S. Supreme Court in the 1954 case Brown v. Board of Education, and ordered the Arkansas National Guard to prevent black students from attending Little Rock Central High School. This event became known as the Little Rock Crisis. He was elected to six two-year terms as governor."
+  1977:
+    events:
+      - title: "The Golden Dragon massacre occurred in Chinatown, San Francisco, leaving five dead and spurring police to end Chinese gang violence in the city."
+        description: "The Golden Dragon massacre was a gang-related mass shooting that took place on September 4, 1977, inside the Golden Dragon Restaurant at 822 Washington Street in Chinatown, San Francisco, California, United States. The five perpetrators, members of the Joe Boys, a Chinese youth gang, were attempting to kill leaders of the Wah Ching, a rival Chinatown gang. The attack left five people dead and 11 others injured, none of whom were gang members. Seven perpetrators were later convicted and sentenced in connection with the murders. The massacre led to the establishment of the San Francisco Police Department's Asian Gang Task Force, credited with ending gang-related violence in Chinatown by 1983. The restaurant itself closed in 2006."
+  2007:
+    events:
+      - title: "Three terrorists suspected to be part of al-Qaeda were arrested in Germany after planning attacks on Frankfurt Airport and Ramstein Air Base."
+        description: "Al-Qaeda is a pan-Islamist militant organization led by Sunni jihadists who self-identify as a vanguard spearheading a global Islamist revolution to unite the Muslim world under a supra-national Islamic caliphate. Its membership is mostly composed of Arabs but also includes people from other ethnic groups. Al-Qaeda has mounted attacks on civilian, economic and military targets of the U.S. and its allies; such as the 1998 US embassy bombings, the USS Cole bombing, and the September 11 attacks."
+  2010:
+    events:
+      - title: "A magnitude-7.1 earthquake (damage pictured) struck the Canterbury Region of New Zealand, causing two deaths and up to NZ$40 billion in damages."
+        description: "The 2010 Canterbury earthquake struck the South Island of New Zealand with a moment magnitude of 7.1 at 4-35 am local time on 4 September, and had a maximum perceived intensity of X (Extreme) on the Mercalli intensity scale. Some damaging aftershocks followed the main event, the strongest of which was a magnitude 6.3 shock known as the Christchurch earthquake that occurred nearly six months later on 22 February 2011. Because this aftershock was centred very close to Christchurch, it was much more destructive and resulted in the deaths of 185 people."
+---

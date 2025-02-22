@@ -1,187 +1,121 @@
+<!-- Date Picker -->
 <div class="date-picker-container">
   <label for="datePicker">Select a Date:</label>
   <input type="date" id="datePicker">
-  <button onclick="loadEventsByDate()">Go</button>
+  <button onclick="navigateToDate()">Go</button>
 </div>
 
-<div class="filter-container">
-  <label for="typeFilter">Filter by Type:</label>
-  <select id="typeFilter">
-    <option value="all">All Types</option>
-    <option value="Politics">Politics</option>
-    <option value="Science">Science</option>
-    <option value="Sports">Sports</option>
-    <option value="Economics">Economics</option>
-    <option value="Technology">Technology</option>
-    <option value="Military">Military</option>
-    <option value="Culture">Culture</option>
-  </select>
-  <button onclick="filterEvents(); return false;">Apply Filter</button>
-</div>
+<!-- Header -->
+<header class="masthead">
+  <div class="header-content">
+    <div class="date-container">
+      <div class="date-box">
+        <h1 class="date-number">{{ "now" | date: "%d" }}</h1>
+        <h2 class="date-month">{{ "now" | date: "%B" }}</h2>
+      </div>
+    </div>
+    <div class="title-container">
+      <h1 class="today-in-history">Today in History</h1>
+      <h3 class="subtitle">Historical Events</h3>
+    </div>
+  </div>
+</header>
 
-<div id="events-list" class="events-list">
-  {% assign today = "now" | date: "%B %-d" %}
-  {% assign todays_events = "" | split: "" %}
+<!-- Events Section -->
+<section>
+  <div class="events-list">
+    {% assign today = "now" | date: "%B %-d" %}
+    {% assign todays_events = "" | split: "" %}
 
-  {% for month in site.portfolio %}
-    {% assign filtered_days = month.days | where: "date", today %}
-    {% for day in filtered_days %}
-      {% assign todays_events = todays_events | push: day %}
-    {% endfor %}
-  {% endfor %}
-  
-  <h2 class="events-date">Events on {{ today }} in History</h2>
-
-  {% if todays_events.size > 0 %}
-    {% for day in todays_events %}
-      {% for year_events in day.years %}
-        {% assign year = year_events[0] %}
-        {% assign events = year_events[1].events %}
-
-        {% for event in events %}
-          <div class="event-item" data-type="{{ event.type }}">
-            
-            <strong class="event-year">{{ year }}</strong>
-            <ul class="event-details">
-              <li>
-                <strong class="event-title">{{ event.title }}</strong>
-                <p class="event-description">{{ event.description }}</p>
-              </li>
-            </ul>
-          </div>
-        {% endfor %}
+    {% for month in site.portfolio %}
+      {% assign filtered_days = month.days | where: "date", today %}
+      {% for day in filtered_days %}
+        {% assign todays_events = todays_events | push: day %}
       {% endfor %}
     {% endfor %}
-  {% else %}
-    <p class="no-events">No historical events found for today.</p>
-  {% endif %}
-</div>
 
-
-<script type="application/json" id="events-data">
-  [
-    {% for month in site.portfolio %}
-      {% for day in month.days %}
+    {% if todays_events.size > 0 %}
+      {% for day in todays_events %}
         {% for year_events in day.years %}
           {% assign year = year_events[0] %}
           {% assign events = year_events[1].events %}
-          {% for event in events %}
-            {
-              "date": "{{ day.date | escape }}",
-              "year": "{{ year | escape }}",
-              "type": "{{ event.type | escape }}",
-              "title": "{{ event.title | escape }}",
-              "description": "{{ event.description | escape }}"
-            }{% if forloop.last and forloop.parentloop.last and forloop.parentloop.parentloop.last and forloop.parentloop.parentloop.parentloop.last %}{% else %},{% endif %}
-          {% endfor %}
+
+          <div class="event-item">
+            <strong class="event-year">{{ year }}</strong>
+            <ul class="event-details">
+              {% for event in events %}
+                <li>
+                  <strong class="event-title">{{ event.title }}</strong>
+                  <p class="event-description">{{ event.description }}</p>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
         {% endfor %}
       {% endfor %}
-    {% endfor %}
-  ]
-</script>
+    {% else %}
+      <p class="no-events">No historical events found for today.</p>
+    {% endif %}
+  </div>
+</section>
 
+<!-- End Header -->
+
+<!-- JavaScript -->
 <script>
-  const allEvents = JSON.parse(document.getElementById("events-data").textContent);
-  console.log(allEvents); 
-  function loadEventsByDate() {
-    const selectedDate = document.getElementById("datePicker").value;
-    if (!selectedDate) {
-      alert("Please select a date.");
-      return;
-    }
+function navigateToDate() {
+  // Get the selected date value
+  let selectedDate = document.getElementById("datePicker").value;
 
-    const dateObj = new Date(selectedDate + "T00:00:00");
-    const month = dateObj.toLocaleString('default', { month: 'long' });
-    const day = dateObj.getUTCDate();
-    const formattedDate = `${month} ${day}`;
-
-    const filteredEvents = allEvents.filter(event => event.date === formattedDate);
-    displayEvents(filteredEvents);
+  // Ensure a date is selected
+  if (!selectedDate) {
+    alert("Please select a date.");
+    return;
   }
 
-  function displayEvents(events) {
-    const eventsList = document.getElementById("events-list");
-    eventsList.innerHTML = "";
+  // Convert selected date to a Date object (Adjust for timezone issue)
+  let dateObj = new Date(selectedDate + "T00:00:00"); // Ensures proper local time handling
 
-    if (events.length === 0) {
-      eventsList.innerHTML = "<p class='no-events'>No historical events found for the selected date.</p>";
-      return;
-    }
+  // Extract correct month and day
+  let month = dateObj.toLocaleString('default', { month: 'long' }); // Full month name
+  let day = dateObj.getUTCDate(); // Use UTC to avoid timezone shifting
 
-    events.forEach(event => {
-      const eventItem = document.createElement("div");
-      eventItem.className = "event-item";
-      eventItem.setAttribute("data-type", event.type);
+  // Create the URL (e.g., /days/february-1/)
+  let url = `/days/${month.toLowerCase()}-${day}/`;
 
-      eventItem.innerHTML = `
-        <strong class="event-year">${event.year}</strong>
-        <ul class="event-details">
-          <li>
-            <strong class="event-title">${event.title}</strong>
-            <p class="event-description">${event.description}</p>
-          </li>
-        </ul>
-      `;
+  // Redirect to the selected day's page
+  window.location.href = url;
+}
 
-      eventsList.appendChild(eventItem);
-    });
-  }
-
-  function filterEvents() {
-    const selectedType = document.getElementById("typeFilter").value;
-    const eventItems = document.querySelectorAll(".event-item");
-
-    eventItems.forEach(item => {
-      const eventType = item.getAttribute("data-type");
-      if (selectedType === "all" || eventType === selectedType) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
-    });
-  }
 </script>
 
 <style>
-  
-  .date-picker-container,
-.filter-container {
+.date-picker-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
-}
-
-.date-picker-container {
   justify-content: right;
 }
+.date-box {
+  display: flex;
+  align-items: center; /* Aligns text vertically */
+  gap: 10px; /* Adds spacing between day and month */
+}
 
-.filter-container label {
+.date-number {
+  font-size: 2rem;
   font-weight: bold;
+  color: #333;
 }
 
-.filter-container select {
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.date-month {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #666;
 }
 
-.filter-container button,
-.date-picker-container button {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.filter-container button:hover,
-.date-picker-container button:hover {
-  background-color: #0056b3;
-}
-
-.events-list {
+  .events-list {
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
@@ -189,7 +123,7 @@
 
 .event-item {
   padding: 15px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
 }
 
 .event-year {
@@ -216,8 +150,4 @@
   margin-top: 2px;
 }
 
-.no-events {
-  text-align: center;
-  color: #999;
-}
 </style>
