@@ -4,28 +4,20 @@ layout: base
 
 <article class="day-page">
   <!-- Header Section -->
+  <div class="date-picker-container">
+    <label for="datePicker">Select a Date:</label>
+    <input type="date" id="datePicker">
+    <button onclick="navigateToDate()">Go</button>
+  </div>
   <header class="masthead">
+    
     <div class="header-content">
+
       <div class="date-header">
-        <!-- Date Display -->
-        <div class="date-container">
-          <div class="date-box">
-            <span class="date-number">{{ page.date | date: "%d" }}</span>
-            <span class="date-month">{{ page.date | date: "%B" }}</span>
-          </div>
-        </div>
-
-        <!-- Date Picker for Selecting a Different Date (Aligned to the Right) -->
-        <div class="date-picker-container">
-          <label for="historyDate">Select a Date:</label>
-          <input type="date" id="historyDate" class="form-control" />
-          <button class="btn btn-primary" onclick="loadSelectedDate()">Go</button>
-        </div>
-      </div>
-
       <!-- Title Section -->
       <div class="title-container">
         <h1 class="today-in-history">{{ page.title }}</h1>
+
         <h3 class="subtitle">{{ page.subtitle }}</h3>
       </div>
     </div>
@@ -59,50 +51,89 @@ layout: base
 </article>
 
 <style>
-
-
-.date-header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-
-/* Styles for Date Picker */
 .date-picker-container {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: right;
+}
+.date-box {
+  display: flex;
+  align-items: center; /* Aligns text vertically */
+  gap: 10px; /* Adds spacing between day and month */
 }
 
-.date-picker-container label {
-  font-size: 1rem;
+.date-number {
+  font-size: 2rem;
+  font-weight: bold;
   color: #333;
 }
 
-.date-picker-container input {
-  padding: 5px;
-  font-size: 1rem;
+.date-month {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #666;
 }
 
-.date-picker-container button {
-  font-size: 1rem;
-  padding: 5px 10px;
+  .events-list {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.event-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+}
+
+.event-year {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-details {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.event-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  display: block;
+}
+
+.event-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 2px;
 }
 </style>
 
 <script>
-function loadSelectedDate() {
-    let selectedDate = document.getElementById('historyDate').value;
-    if (!selectedDate) {
-        alert("Please select a date.");
-        return;
-    }
+function navigateToDate() {
+  // Get the selected date value
+  let selectedDate = document.getElementById("datePicker").value;
 
-    // Redirect to the selected date's history page
-    window.location.href = `/history/${selectedDate}`;
+  // Ensure a date is selected
+  if (!selectedDate) {
+    alert("Please select a date.");
+    return;
+  }
+
+  // Convert selected date to a Date object (Adjust for timezone issue)
+  let dateObj = new Date(selectedDate + "T00:00:00"); // Ensures proper local time handling
+
+  // Extract correct month and day
+  let month = dateObj.toLocaleString('default', { month: 'long' }); // Full month name
+  let day = dateObj.getUTCDate(); // Use UTC to avoid timezone shifting
+
+  // Create the URL (e.g., /days/february-1/)
+  let url = `/days/${month.toLowerCase()}-${day}/`;
+
+  // Redirect to the selected day's page
+  window.location.href = url;
 }
+
 </script>

@@ -1,0 +1,66 @@
+---
+layout: day
+title: "Significant Events on May 2"
+date: "May 2"
+years:
+  1194:
+    events:
+      - title: "King Richard I of England gave the city of Portsmouth (pictured) its first royal charter."
+        description: "Richard I, known as Richard Cœur de Lion or Richard the Lionheart because of his reputation as a great military leader and warrior, was King of England from 1189 until his death in 1199. He also ruled as Duke of Normandy, Aquitaine, and Gascony; Lord of Cyprus; Count of Poitiers, Anjou, Maine, and Nantes; and was overlord of Brittany at various times during the same period. He was the third of five sons of Henry II of England and Eleanor of Aquitaine and was therefore not expected to become king, but his two elder brothers predeceased their father."
+  1559:
+    events:
+      - title: "Presbyterian clergyman John Knox returned from exile to lead the Scottish Reformation."
+        description: "Presbyterianism is a Reformed (Calvinist) Protestant tradition named for its form of church government by representative assemblies of elders. Though other Reformed churches are structurally similar, the word Presbyterian is applied to churches that trace their roots to the Church of Scotland or to English Dissenter groups that were formed during the English Civil War."
+  1670:
+    events:
+      - title: "A royal charter granted the Hudson's Bay Company a monopoly in the fur trade in Rupert's Land (present-day Canada)."
+        description: "A royal charter is a formal grant issued by a monarch under royal prerogative as letters patent. Historically, they have been used to promulgate public laws, the most famous example being the English Magna Carta of 1215, but since the 14th century have only been used in place of private acts to grant a right or power to an individual or a body corporate. They were, and are still, used to establish significant organisations such as boroughs, universities, and learned societies."
+  1878:
+    events:
+      - title: "A dust explosion at the world's largest flour mill in Minneapolis resulted in 18 deaths."
+        description: "The Great Mill Disaster, also known as the Washburn A Mill explosion, occurred on May 2, 1878, in Minneapolis, Minnesota, United States. The disaster resulted in 18 deaths. The explosion occurred on a Thursday evening when an accumulation of flour dust inside the Washburn A Mill, the largest mill in the world at the time, led to a dust explosion that killed the fourteen workers inside the mill. The resulting fire destroyed several nearby mills and killed a further four millworkers. The destruction seriously impacted the city's productive capacity for flour, which was a major industry in the city. Following the blast, Cadwallader C. Washburn, the mill's owner, had a new mill, designed by William de la Barre, constructed on the site of the old one. This building was also later destroyed, and today the building's ruins are a National Historic Landmark and operated as part of the Mill City Museum."
+  1889:
+    events:
+      - title: "The Treaty of Wuchale was signed, ending the Italo-Ethiopian War, but differences in translation later led to another war."
+        description: "The Treaty of Wuchale was a treaty signed between the Ethiopian Empire and the Kingdom of Italy. The signing parties were King Menelik II of Shewa, acting as Emperor of Ethiopia, and Count Pietro Antonelli representing Italy, on 2 May 1889, established the treaty after the Italian occupation of Eritrea. It was signed in the small Ethiopian town of Wuchale, from which the treaty got its name. The purpose of the treaty was to promote friendship and trade among the two countries. It was a treaty to maintain a positive long-lasting relationship between the two empires. The treaty has twenty articles written in two languages, Amharic and Italian; however, there were marked differences in the Italian and the Amharic versions of the treaty, which created miscommunications between the two countries. Specifically, Article 17 of the treaty was translated and interpreted differently by Ethiopia and Italy. Italy claimed the article imposed a protectorate over Ethiopia, while Ethiopia claimed the article allowed international diplomacy to be conducted through Italy by choice. When Menelik II denounced the treaty in 1893, Italy attempted to forcefully impose the protectorate over Ethiopia in the First Italo-Ethiopian War, which ended with Italy's defeat at the Battle of Adwa and the resulting Treaty of Addis Ababa."
+  1945:
+    events:
+      - title: "World War II- General Helmuth Weidling, the German commander of Berlin, surrendered to Soviet forces led by Marshal Georgy Zhukov, ending the Battle of Berlin."
+        description: "World War II or the Second World War was a global conflict between two coalitions- the Allies and the Axis powers. Nearly all of the world's countries participated, with many nations mobilising all resources in pursuit of total war. Tanks and aircraft played major roles, enabling the strategic bombing of cities and delivery of the first and only nuclear weapons ever used in war. World War II was the deadliest conflict in history, resulting in 70 to 85 million deaths, more than half of which were civilians. Millions died in genocides, including the Holocaust, and by massacres, starvation, and disease. After the Allied victory, Germany, Austria, Japan, and Korea were occupied, and German and Japanese leaders were tried for war crimes."
+  1964:
+    events:
+      - title: "Vietnam War- An explosion attributed to Viet Cong commandos caused the escort carrier USNS Card to sink in the port of Saigon."
+        description: "The Vietnam War was an armed conflict in Vietnam, Laos, and Cambodia fought between North Vietnam and South Vietnam and their allies. North Vietnam was supported by the Soviet Union and China, while South Vietnam was supported by the United States and other anti-communist nations. The conflict was the second of the Indochina Wars and a major proxy war of the Cold War between the Soviet Union and US. Direct US military involvement greatly escalated from 1965 until its withdrawal in 1973. The fighting spilled over into the Laotian and Cambodian Civil Wars, which ended with all three countries becoming communist in 1975."
+  1982:
+    events:
+      - title: "Falklands War- HMS Conqueror sank the Argentine cruiser General Belgrano (pictured), the only ship ever to have been deliberately sunk by a nuclear submarine in battle."
+        description: "The Falklands War was a ten-week undeclared war between Argentina and the United Kingdom in 1982 over two British dependent territories in the South Atlantic- the Falkland Islands and its territorial dependency, South Georgia and the South Sandwich Islands. The conflict began on 2 April 1982, when Argentina invaded and occupied the Falkland Islands, followed by the invasion of South Georgia the next day. On 5 April, the British government dispatched a naval task force to engage the Argentine Navy and Air Force before making an amphibious assault on the islands. The conflict lasted 74 days and ended with an Argentine surrender on 14 June, returning the islands to British control. In total, 649 Argentine military personnel, 255 British military personnel, and three Falkland Islanders were killed during the hostilities."
+  1995:
+    events:
+      - title: "Croatian War of Independence- Serb forces began rocket attacks on the Croatian capital Zagreb, killing 7 people and injuring around 200 others."
+        description: "The Croatian War of Independence was an armed conflict fought in Croatia from 1991 to 1995 between Croat forces loyal to the Government of Croatia — which had declared independence from the Socialist Federal Republic of Yugoslavia (SFRY) — and the Serb-controlled Yugoslav People's Army (JNA) and local Serb forces, with the JNA ending its combat operations by 1992."
+  1999:
+    events:
+      - title: "Mireya Moscoso (pictured) became the first woman to be elected President of Panama."
+        description: "Mireya Elisa Moscoso Rodríguez is a Panamanian politician who served as the President of Panama from 1999 to 2004. She is the country's first and to date only female president."
+  2003:
+    events:
+      - title: "Cyclone Manou formed in the Indian Ocean; over the next two weeks it struck Madagascar and left more than 100,000 people homeless."
+        description: "Tropical Cyclone Manou was a relatively rare May tropical cyclone that affected southeastern Madagascar. The final named storm of the 2002–03 South-West Indian Ocean cyclone season, Manou formed on May 2 to the southwest of Diego Garcia. It moved generally to the southwest for much of its duration, steered by a ridge to the southeast. Manou affected Saint Brandon and Mauritius with gusty winds. After an initial strengthening phase, the storm weakened but later re-intensified as it approached Madagascar. Manou developed a well-defined eye and reached peak winds only 19 km (12 mi) from the eastern Madagascar coastline. For about 12 hours, the cyclone stalled before turning to the south and weakening. Manou became extratropical on May 10 and dissipated three days later."
+  2008:
+    events:
+      - title: "The Chaitén volcano in Chile began to erupt for the first time since around 1640."
+        description: "Chaitén is a volcanic caldera 3 kilometres (2 mi) in diameter, 17 kilometres (11 mi) west of the elongated ice-capped Michinmahuida volcano and 10 kilometres (6 mi) northeast of the town of Chaitén, near the Gulf of Corcovado in southern Chile. The most recent eruptive phase of the volcano erupted on 2008. Originally, radiocarbon dating of older tephra from the volcano suggested that its last previous eruption was in 7420 BC ± 75 years. However, recent studies have found that the volcano is more active than thought. According to the Global Volcanism Program, its last eruption was in 2011."
+  2011:
+    events:
+      - title: "Osama bin Laden was killed by U.S. Navy SEAL Team Six in his private residential compound in Abbottabad, Pakistan."
+        description: "On May 2, 2011, the United States conducted Operation Neptune Spear, in which SEAL Team Six shot and killed Osama bin Laden at his 'Waziristan Haveli' in Abbottabad, Pakistan. Bin Laden, who founded al-Qaeda and masterminded the September 11 attacks, had been the subject of a United States military manhunt since the beginning of the War in Afghanistan, but escaped to Pakistan—allegedly with Pakistani support—during or after the Battle of Tora Bora in December 2001. The mission was part of an effort led by the Central Intelligence Agency (CIA), with the Joint Special Operations Command (JSOC) coordinating the Special Mission Units involved in the raid. In addition to SEAL Team Six, participating units under JSOC included the 160th Special Operations Aviation Regiment (Airborne) and the CIA's Special Activities Division, which recruits heavily from among former JSOC Special Mission Units."
+      - title: "The Conservative Party of Canada won enough seats in the federal election to establish their first majority government."
+        description: "The Conservative Party of Canada, colloquially known as the Tories or simply the Conservatives, is a federal political party in Canada. It was formed in 2003 by the merger of the two main right-leaning parties, the Progressive Conservative Party and the Canadian Alliance, the latter being the successor of the Western Canadian–based Reform Party. The party sits at the centre-right to the right of the Canadian political spectrum, with their federal rival, the centre-left Liberal Party of Canada, positioned to their left. The Conservatives are defined as a 'big tent' party, practising 'brokerage politics' and welcoming a broad variety of members, including 'Red Tories' and 'Blue Tories'."
+  2014:
+    events:
+      - title: "Russo-Ukrainian War- Forty-eight people were killed during a confrontation between pro-Russian protesters and pro-Ukrainian unity protesters in the southern Ukrainian port city of Odesa."
+        description: "The Russo-Ukrainian War began in February 2014. Following Ukraine's Revolution of Dignity, Russia occupied and annexed Crimea from Ukraine and supported pro-Russian separatists fighting the Ukrainian military in the Donbas War. These first eight years of conflict also included naval incidents and cyberwarfare. In February 2022, Russia launched a full-scale invasion of Ukraine and began occupying more of the country, starting the biggest conflict in Europe since World War II. The war has resulted in a refugee crisis and tens of thousands of deaths."
+      - title: "Two mudslides in Badakhshan Province, Afghanistan, killed at least 350 people."
+        description: "On 2 May 2014, a pair of mudslides occurred in Argo District, Badakhshan Province, Afghanistan. The death toll is uncertain, the number of deaths the number of deaths is believed to be at least 350 and no more than 2,700. Around 300 houses were buried and over 14,000 were affected. Rescuers responding to the initial mudslide were struck by a second mudslide, which further hampered rescue efforts."
+---
