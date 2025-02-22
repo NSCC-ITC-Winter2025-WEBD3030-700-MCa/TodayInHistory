@@ -4,19 +4,20 @@ layout: base
 
 <article class="day-page">
   <!-- Header Section -->
+  <div class="date-picker-container">
+    <label for="datePicker">Select a Date:</label>
+    <input type="date" id="datePicker">
+    <button onclick="navigateToDate()">Go</button>
+  </div>
   <header class="masthead">
+    
     <div class="header-content">
-      <!-- Date Display -->
-      <div class="date-container">
-        <div class="date-box">
-          <span class="date-number">{{ page.date | date: "%d" }}</span>
-          <span class="date-month">{{ page.date | date: "%B" }}</span>
-        </div>
-      </div>
 
+      <div class="date-header">
       <!-- Title Section -->
       <div class="title-container">
         <h1 class="today-in-history">{{ page.title }}</h1>
+
         <h3 class="subtitle">{{ page.subtitle }}</h3>
       </div>
     </div>
@@ -48,9 +49,14 @@ layout: base
     </div>
   </section>
 </article>
+
 <style>
-
-
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: right;
+}
 .date-box {
   display: flex;
   align-items: center; /* Aligns text vertically */
@@ -69,39 +75,65 @@ layout: base
   color: #666;
 }
 
+  .events-list {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
 
-.events-list {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .event-item {
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd; /* Bottom border for separation */
-  }
-  
-  .event-year {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .event-details {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 5px;
-  }
-  
-  .event-title {
-    font-size: 1.1em;
-    font-weight: bold;
-    display: block;
-  }
-  
-  .event-description {
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 2px;
-  }
+.event-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+}
+
+.event-year {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-details {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.event-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  display: block;
+}
+
+.event-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 2px;
+}
 </style>
+
+<script>
+function navigateToDate() {
+  // Get the selected date value
+  let selectedDate = document.getElementById("datePicker").value;
+
+  // Ensure a date is selected
+  if (!selectedDate) {
+    alert("Please select a date.");
+    return;
+  }
+
+  // Convert selected date to a Date object (Adjust for timezone issue)
+  let dateObj = new Date(selectedDate + "T00:00:00"); // Ensures proper local time handling
+
+  // Extract correct month and day
+  let month = dateObj.toLocaleString('default', { month: 'long' }); // Full month name
+  let day = dateObj.getUTCDate(); // Use UTC to avoid timezone shifting
+
+  // Create the URL (e.g., /days/february-1/)
+  let url = `/days/${month.toLowerCase()}-${day}/`;
+
+  // Redirect to the selected day's page
+  window.location.href = url;
+}
+
+</script>
