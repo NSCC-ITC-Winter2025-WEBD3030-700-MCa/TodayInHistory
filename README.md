@@ -63,15 +63,13 @@ bundle install
 ```
 
 ## Start the Application
-Use one of the following commands to start the Jekyll server:
+Use the following commands to start the Jekyll server:
 
-**Recommended:**
+
 ```sh
-bundle exec jekyll serve
-```  
-**Alternatively:**
-```sh
-jekyll serve
+jekyll build  
+
+jekyll serve  --future 
 ```
 
 ## Mac Installation
