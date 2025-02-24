@@ -1,16 +1,6 @@
-# Today in History 
+# Jekyll Project Setup Guide
 
-## Overview
-Welcome to Today in History! This site is dedicated to bringing key moments across various domains such as science, politics, culture, sports, and more. Whether it's the birth of influential figures, groundbreaking discoveries, or pivotal events that shaped the world, "Today in History" serves as a window into the past.
-
-## Features
--significant events, milestones, and anniversaries that occurred on this day throughout history.
-
-## Setup Instructions
-
-## Jekyll Project Setup Guide
-
-### **Contributor Resources**  
+## **Contributor Resources**  
 
 Liquid is a templating language that allows Jekyll to dynamically pull content from different folders and Markdown files. It helps organize content without using a backend database.
 
@@ -25,7 +15,7 @@ This project is based on **Minima**, the default Jekyll theme.
 
 ---
 
-## **Windows Installation**  
+# **Windows Installation**  
 
 ## **Prerequisites**
 Before running this Jekyll project, ensure you have the following installed:
@@ -146,14 +136,6 @@ Use the following commands to start the Jekyll server:
 jekyll serve
 ```
 
-### Contributing
-Fork the repository.
-Create a new branch (feature-branch)
-Commit your changes.
-Push to your branch and submit a pull request.
- 
-### Licence
-Copyright 2025
+## Live Deployed Site
 
-### Live Deployed Site
-You can view the live version of the site at: [https://todayinhistory-nscc.netlify.app/](hhttps://todayinhistory-nscc.netlify.app/)
+You can view the live version of the site at: [Today in History](https://todayinhistory-nscc.netlify.app/)
