@@ -9,6 +9,14 @@ layout: base
     <input type="date" id="datePicker">
     <button onclick="navigateToDate()">Go</button>
   </div>
+
+
+  <!-- Random Date Picker -->
+<div class="date-picker-container">
+  <button onclick="randomEventsByDate()">Random Date</button>
+</div>
+
+
   <header class="masthead">
     
     <div class="header-content">
@@ -133,6 +141,32 @@ function navigateToDate() {
   let url = `/days/${month.toLowerCase()}-${day}/`;
 
   // Redirect to the selected day's page
+  window.location.href = url;
+}
+
+
+
+
+function randomEventsByDate() {
+  // Get the current year
+  let today = new Date();
+  let currentYear = today.getFullYear();
+
+  // Get the start and end of the current year
+  let startOfYear = new Date(currentYear, 0, 1); // January 1st of the current year
+  let endOfYear = new Date(currentYear, 11, 31); // December 31st of the current year
+  
+  // Randomly choose a date between the start and end of the year
+  let randomDate = new Date(startOfYear.getTime() + Math.random() * (endOfYear.getTime() - startOfYear.getTime()));
+
+  // Extract the month and day
+  let month = randomDate.toLocaleString('default', { month: 'long' }); // Full month name
+  let day = randomDate.getUTCDate(); // Use UTC to avoid timezone shifting
+
+  // Create the URL (e.g., /days/february-1/)
+  let url = `/days/${month.toLowerCase()}-${day}/`;
+
+  // Redirect to the random day's page
   window.location.href = url;
 }
 
